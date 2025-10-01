@@ -4,9 +4,9 @@
       "name": "Linux",
       "includePath": [
         "${workspaceFolder}/**",
-        "${workspaceFolder}/src/imu_publisher_2/include",
-        "${workspaceFolder}/src/imu_publisher_2/include/imu_publisher_2",
-        "${workspaceFolder}/src/tutorial_interfaces/msg",
+        "${workspaceFolder}/src/imu_pubsub/include",
+        "${workspaceFolder}/src/imu_pubsub/include/imu_pubsub",
+        "${workspaceFolder}/src/imu_msgs/msg",
         "/opt/ros/humble/include/**",
         "/opt/ros/humble/include",
         "/usr/include/**"
