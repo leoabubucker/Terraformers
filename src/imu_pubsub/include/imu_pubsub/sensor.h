@@ -10,6 +10,13 @@ extern "C"{
 #include <sys/shm.h>
 #include <stdio.h>
 #include <math.h>
+#include <string>
+#include "builtin_interfaces/msg/time.hpp"
+#include <sstream>
+#include <iomanip>
+#include <algorithm>
+#include <unordered_set>
+#include<bits/stdc++.h>
 //compile this code on the microcontroller before running
 #define SHM_KEY 12345
 
@@ -37,6 +44,7 @@ class Sensor{
         static float h_z;
 
         static void initSensor();
+        static std::string format_timestamp(const builtin_interfaces::msg::Time &stamp);
     
     private:
         static int fd, s_iCurBaud;
@@ -48,4 +56,5 @@ class Sensor{
         static void SensorDataUpdata(uint32_t uiReg, uint32_t uiRegNum);
         static void Delayms(uint16_t ucMs);
         static int add_to_memory();
+
 };

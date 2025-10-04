@@ -3,9 +3,9 @@
 #include <chrono>
 #include <memory>
 #include <array>
-#include "rclcpp/rclcpp.hpp"
+#include "rclcpp/rclcpp.hpp"         // Error on this line may be due to incorrect VSCode config and NOT an actual error. If building and running works, ignore the error.
 #include "imu_msgs/msg/imu_data.hpp" // Error on this line may be due to incorrect VSCode config and NOT an actual error. If building and running works, ignore the error.
-#include "imu_pubsub/sensor.h" // Error on this line may be due to incorrect VSCode config and NOT an actual error. If building and running works, ignore the error.
+#include "imu_pubsub/sensor.h"       // Error on this line may be due to incorrect VSCode config and NOT an actual error. If building and running works, ignore the error.
 using namespace std::chrono_literals;
 
 class IMUPublisher : public rclcpp::Node
@@ -14,10 +14,10 @@ public:
   IMUPublisher()
       : Node("imu_publisher"), count_(0)
   {
-    accelerationPublisher_ = this->create_publisher<imu_msgs::msg::IMUData>("IMUAcceleration", 10); 
-    anglePublisher_ = this->create_publisher<imu_msgs::msg::IMUData>("IMUAngle", 10);               
-    gyroPublisher_ = this->create_publisher<imu_msgs::msg::IMUData>("IMUGyro", 10);                 
-    magnetPublisher_ = this->create_publisher<imu_msgs::msg::IMUData>("IMUMagnet", 10);             
+    accelerationPublisher_ = this->create_publisher<imu_msgs::msg::IMUData>("IMUAcceleration", 10);
+    anglePublisher_ = this->create_publisher<imu_msgs::msg::IMUData>("IMUAngle", 10);
+    gyroPublisher_ = this->create_publisher<imu_msgs::msg::IMUData>("IMUGyro", 10);
+    magnetPublisher_ = this->create_publisher<imu_msgs::msg::IMUData>("IMUMagnet", 10);
     publishers = {
         {"IMUAcceleration", accelerationPublisher_},
         {"IMUAngle", anglePublisher_},
@@ -37,18 +37,21 @@ private:
 
     auto message = imu_msgs::msg::IMUData();
 
+    message.header.stamp = this->now();
+    message.header.frame_id = "imu_link";
     message.x = dataMatrix[currentKey][0];
     message.y = dataMatrix[currentKey][1];
-    message.z = dataMatrix[currentKey][2];                                                                                              
-    RCLCPP_INFO(this->get_logger(), "Publishing to topic %s: x: '%f' y: '%f' z: '%f'", topic.c_str(), message.x, message.y, message.z); 
+    message.z = dataMatrix[currentKey][2];
+    RCLCPP_INFO(this->get_logger(), "Publishing to topic [%s]:\nHeader Timestamp: %s\nFrame ID: %s\nx: %f\ny: %f\nz: %f", topic.c_str(), Sensor::format_timestamp(message.header.stamp).c_str(),
+                message.header.frame_id.c_str(), message.x, message.y, message.z);
     publishers.at(topic)->publish(message);
     currentKey = (currentKey + 1) % 4;
   }
   rclcpp::TimerBase::SharedPtr timer_;
   rclcpp::Publisher<imu_msgs::msg::IMUData>::SharedPtr accelerationPublisher_;
-  rclcpp::Publisher<imu_msgs::msg::IMUData>::SharedPtr anglePublisher_;        
-  rclcpp::Publisher<imu_msgs::msg::IMUData>::SharedPtr gyroPublisher_;         
-  rclcpp::Publisher<imu_msgs::msg::IMUData>::SharedPtr magnetPublisher_;       
+  rclcpp::Publisher<imu_msgs::msg::IMUData>::SharedPtr anglePublisher_;
+  rclcpp::Publisher<imu_msgs::msg::IMUData>::SharedPtr gyroPublisher_;
+  rclcpp::Publisher<imu_msgs::msg::IMUData>::SharedPtr magnetPublisher_;
   std::map<std::string, rclcpp::Publisher<imu_msgs::msg::IMUData>::SharedPtr> publishers;
   int currentKey = 0;
   std::string keys[4] = {"IMUAcceleration", "IMUAngle", "IMUGyro", "IMUMagnet"};

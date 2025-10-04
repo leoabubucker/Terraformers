@@ -1,0 +1,9 @@
+std_msgs/Header header
+string utc_time
+float64 latitude
+float64 longitude
+uint8 fix_quality
+uint8 num_satellites
+float32 hdop
+float32 altitude
+float32 geoid_separation

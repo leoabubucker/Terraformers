@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(imu_msgs)
+project(gps_msgs)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -14,7 +14,7 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED) # for default string msgs
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/IMUData.msg"
+  "msg/GPSData.msg"
   DEPENDENCIES std_msgs
  )
 if(BUILD_TESTING)

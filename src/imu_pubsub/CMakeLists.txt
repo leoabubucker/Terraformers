@@ -19,7 +19,7 @@ find_package(imu_msgs REQUIRED) # for custom msgs
 add_executable(imu_publisher src/IMUPublisher.cpp src/sensor.cpp src/serial.c src/wit_c_sdk.c)
 ament_target_dependencies(imu_publisher rclcpp imu_msgs std_msgs)
 
-add_executable(imu_subscriber src/IMUSubscriber.cpp)
+add_executable(imu_subscriber src/IMUSubscriber.cpp src/sensor.cpp src/serial.c src/wit_c_sdk.c)
 ament_target_dependencies(imu_subscriber rclcpp imu_msgs std_msgs)
 
 install(TARGETS

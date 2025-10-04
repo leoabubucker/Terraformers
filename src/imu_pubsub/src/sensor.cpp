@@ -19,39 +19,39 @@ void Sensor::initSensor()
      *   b) Comment "Sensor::add_to_memory()"
      *   c) Uncomment the rest of this function
      */
-    Sensor::add_to_memory();
-    // unsigned char *sensorPath; TODO: ADD SENSOR PATH
+    // Sensor::add_to_memory();
+    unsigned char *sensorPath = (unsigned char*)"/dev/ttyUSB0"; //TODO: ADD SENSOR PATH
 
-    // if((Sensor::fd = serial_open(sensorPath , 9600)<0))
-    // {
-    //     printf("open %s fail\n", sensorPath);
-    //     return;
-    // }
-    // else printf("open %s success\n", sensorPath);
+    if((Sensor::fd = serial_open(sensorPath , 9600)<0))
+    {
+        printf("open %s fail\n", sensorPath);
+        return;
+    }
+    else printf("open %s success\n", sensorPath);
 
-    // float fAcc[3], fGyro[3], fAngle[3];
-    // int i , ret;
-    // unsigned char cBuff[1];
+    float fAcc[3], fGyro[3], fAngle[3];
+    int i , ret;
+    unsigned char cBuff[1];
 
-    // WitInit(WIT_PROTOCOL_NORMAL, 0x50);
-    // WitRegisterCallBack(SensorDataUpdata);
+    WitInit(WIT_PROTOCOL_NORMAL, 0x50);
+    WitRegisterCallBack(SensorDataUpdata);
 
-    // // printf("\r\n********************** wit-motion Normal example  ************************\r\n");
-    // Sensor::AutoScanSensor(sensorPath);
+    // printf("\r\n********************** wit-motion Normal example  ************************\r\n");
+    Sensor::AutoScanSensor(sensorPath);
 
-    //     while(serial_read_data(Sensor::fd, cBuff, 1)){
-    //         WitSerialDataIn(cBuff[0]);
-    //     }
+        while(serial_read_data(Sensor::fd, cBuff, 1)){
+            WitSerialDataIn(cBuff[0]);
+        }
 
-    //     // printf("\n");
-    //     Sensor::Delayms(500);
+        // printf("\n");
+        Sensor::Delayms(500);
 
-    //     if(Sensor::s_cDataUpdate){
-    //         // When data needs to be updated
-    //         Sensor::add_to_memory();
-    //     }
-    // serial_close(fd);
-    // return;
+        if(Sensor::s_cDataUpdate){
+            // When data needs to be updated
+            Sensor::add_to_memory();
+        }
+    serial_close(fd);
+    return;
 }
 
 int Sensor::add_to_memory()
@@ -63,19 +63,19 @@ int Sensor::add_to_memory()
      * 2) To publish data from the sensor:
      *   a) Comment all lines before the first if statement that set Sensor::someValue
      */  
-    Sensor::acc_x = static_cast<float>(rand()) / RAND_MAX * 10.0f;
-    Sensor::acc_y = static_cast<float>(rand()) / RAND_MAX * 10.0f;
-    Sensor::acc_z = static_cast<float>(rand()) / RAND_MAX * 10.0f;
-    Sensor::angle_x = static_cast<float>(rand()) / RAND_MAX * 10.0f;
-    Sensor::angle_y = static_cast<float>(rand()) / RAND_MAX * 10.0f;
-    Sensor::angle_z = static_cast<float>(rand()) / RAND_MAX * 10.0f;
-    Sensor::gyro_x = static_cast<float>(rand()) / RAND_MAX * 10.0f;
-    Sensor::gyro_y = static_cast<float>(rand()) / RAND_MAX * 10.0f;
-    Sensor::gyro_z = static_cast<float>(rand()) / RAND_MAX * 10.0f;
-    Sensor::h_x = static_cast<float>(rand()) / RAND_MAX * 10.0f;
-    Sensor::h_y = static_cast<float>(rand()) / RAND_MAX * 10.0f;
-    Sensor::h_z = static_cast<float>(rand()) / RAND_MAX * 10.0f;
-    if (Sensor::s_cDataUpdate && false)
+    // Sensor::acc_x = static_cast<float>(rand()) / RAND_MAX * 10.0f;
+    // Sensor::acc_y = static_cast<float>(rand()) / RAND_MAX * 10.0f;
+    // Sensor::acc_z = static_cast<float>(rand()) / RAND_MAX * 10.0f;
+    // Sensor::angle_x = static_cast<float>(rand()) / RAND_MAX * 10.0f;
+    // Sensor::angle_y = static_cast<float>(rand()) / RAND_MAX * 10.0f;
+    // Sensor::angle_z = static_cast<float>(rand()) / RAND_MAX * 10.0f;
+    // Sensor::gyro_x = static_cast<float>(rand()) / RAND_MAX * 10.0f;
+    // Sensor::gyro_y = static_cast<float>(rand()) / RAND_MAX * 10.0f;
+    // Sensor::gyro_z = static_cast<float>(rand()) / RAND_MAX * 10.0f;
+    // Sensor::h_x = static_cast<float>(rand()) / RAND_MAX * 10.0f;
+    // Sensor::h_y = static_cast<float>(rand()) / RAND_MAX * 10.0f;
+    // Sensor::h_z = static_cast<float>(rand()) / RAND_MAX * 10.0f;
+    if (Sensor::s_cDataUpdate)
     {
 
         if (Sensor::s_cDataUpdate & ACC_UPDATE)
@@ -202,4 +202,25 @@ void Sensor::AutoScanSensor(unsigned char *dev)
     }
     printf("can not find sensor\r\n");
     printf("please check your connection\r\n");
+}
+
+std::string Sensor::format_timestamp(const builtin_interfaces::msg::Time &stamp)
+{
+    // Combine seconds and nanoseconds into std::chrono::time_point
+    auto total_ns = std::chrono::seconds(stamp.sec) + std::chrono::nanoseconds(stamp.nanosec);
+    auto time_point = std::chrono::time_point<std::chrono::system_clock>(total_ns);
+
+    // Convert to time_t for std::put_time
+    std::time_t time_sec = std::chrono::system_clock::to_time_t(time_point);
+    std::tm tm = *std::gmtime(&time_sec); // or std::localtime if you want local time
+
+    // Get fractional seconds
+    auto fractional_ns = stamp.nanosec % 1000000000;
+
+    // Format to string
+    std::ostringstream oss;
+    oss << std::put_time(&tm, "%Y-%m-%d %H:%M:%S");
+    oss << "." << std::setw(3) << std::setfill('0') << fractional_ns / 1000000; // milliseconds
+
+    return oss.str();
 }

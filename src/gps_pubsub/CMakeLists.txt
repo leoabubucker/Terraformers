@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(imu_msgs)
+project(gps_pubsub)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -10,13 +10,30 @@ find_package(ament_cmake REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
-find_package(rosidl_default_generators REQUIRED)
-find_package(std_msgs REQUIRED) # for default string msgs
+find_package(rclcpp REQUIRED)
 
-rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/IMUData.msg"
-  DEPENDENCIES std_msgs
- )
+find_package(std_msgs REQUIRED) # for default string msgs
+find_package(gps_msgs REQUIRED) # for custom msgs
+
+add_executable(gps_publisher src/GPSPublisher.cpp src/gps.cpp)
+ament_target_dependencies(gps_publisher rclcpp std_msgs gps_msgs)
+
+add_executable(gps_subscriber src/GPSSubscriber.cpp src/gps.cpp)
+ament_target_dependencies(gps_subscriber rclcpp std_msgs gps_msgs)
+
+install(TARGETS
+  gps_publisher
+  gps_subscriber
+  DESTINATION lib/${PROJECT_NAME})
+
+target_include_directories(gps_publisher PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+)
+
+target_include_directories(gps_subscriber PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights

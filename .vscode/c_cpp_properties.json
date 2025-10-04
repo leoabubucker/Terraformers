@@ -6,7 +6,10 @@
         "${workspaceFolder}/**",
         "${workspaceFolder}/src/imu_pubsub/include",
         "${workspaceFolder}/src/imu_pubsub/include/imu_pubsub",
+        "${workspaceFolder}/src/gps_pubsub/include",
+        "${workspaceFolder}/src/gps_pubsub/include/gps_pubsub",
         "${workspaceFolder}/src/imu_msgs/msg",
+        "${workspaceFolder}/src/gps_msgs/msg",
         "/opt/ros/humble/include/**",
         "/opt/ros/humble/include",
         "/usr/include/**"
