@@ -10,16 +10,20 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
+# ROS Default Packages for C++
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 
-find_package(std_msgs REQUIRED) # for default string msgs
-find_package(imu_msgs REQUIRED) # for custom msgs
+# Required Package for String Msgs
+find_package(std_msgs REQUIRED)
 
-add_executable(imu_publisher src/IMUPublisher.cpp src/sensor.cpp src/serial.c src/wit_c_sdk.c)
+# Required Package for Custom Msgs
+find_package(imu_msgs REQUIRED)
+
+add_executable(imu_publisher src/imu_publisher.cpp src/imu_helper.cpp src/serial.c src/wit_c_sdk.c)
 ament_target_dependencies(imu_publisher rclcpp imu_msgs std_msgs)
 
-add_executable(imu_subscriber src/IMUSubscriber.cpp src/sensor.cpp src/serial.c src/wit_c_sdk.c)
+add_executable(imu_subscriber src/imu_subscriber.cpp src/imu_helper.cpp src/serial.c src/wit_c_sdk.c)
 ament_target_dependencies(imu_subscriber rclcpp imu_msgs std_msgs)
 
 install(TARGETS

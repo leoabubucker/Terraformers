@@ -1,3 +1,6 @@
+#ifndef SRC_IMU_PUBSUB_INCLUDE_IMU_PUBSUB_IMU_HELPER_H_
+#define SRC_IMU_PUBSUB_INCLUDE_IMU_PUBSUB_IMU_HELPER_H_
+
 extern "C"{
     #include "serial.h"
     #include "wit_c_sdk.h"
@@ -17,6 +20,17 @@ extern "C"{
 #include <algorithm>
 #include <unordered_set>
 #include<bits/stdc++.h>
+#include <memory>
+
+#include "rclcpp/rclcpp.hpp"  
+
+#include "imu_msgs/msg/imu_data.hpp"
+#include <iostream>
+#include <fstream>
+
+#include <map>
+#include <chrono>
+#include <array>
 //compile this code on the microcontroller before running
 #define SHM_KEY 12345
 
@@ -28,7 +42,7 @@ extern "C"{
 #define IS_VALID_FLOAT(val) (!isnan(val))
 #define IS_VALID_INT(val)   (val != 0)
 
-class Sensor{
+class IMUHelper{
     public:
         static float acc_x;
         static float acc_y;
@@ -58,3 +72,5 @@ class Sensor{
         static int add_to_memory();
 
 };
+
+#endif // SRC_IMU_PUBSUB_INCLUDE_IMU_PUBSUB_IMU_HELPER_H_

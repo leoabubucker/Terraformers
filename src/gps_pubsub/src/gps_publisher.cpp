@@ -1,11 +1,4 @@
-#include <string>
-#include <map>
-#include <chrono>
-#include <memory>
-#include <array>
-#include "rclcpp/rclcpp.hpp"         // Error on this line may be due to incorrect VSCode config and NOT an actual error. If building and running works, ignore the error.
-#include "gps_msgs/msg/gps_data.hpp" // Error on this line may be due to incorrect VSCode config and NOT an actual error. If building and running works, ignore the error.
-#include "gps_pubsub/gps.h"          // Error on this line may be due to incorrect VSCode config and NOT an actual error. If building and running works, ignore the error.
+#include "gps_pubsub/gps_helper.h"
 using namespace std::chrono_literals;
 
 class GPSPublisher : public rclcpp::Node
@@ -32,16 +25,16 @@ private:
     // message.hdop = 0.8;
     // message.altitude = 26.6381;
     // message.geoid_separation = -33.0521;
-    message.utc_time = GPS::utc_time;
-    message.latitude = GPS::latitude;
-    message.longitude = GPS::longitude;
-    message.fix_quality = GPS::fix_quality;
-    message.num_satellites = GPS::num_satellites;
-    message.hdop = GPS::hdop;
-    message.altitude = GPS::altitude;
-    message.geoid_separation = GPS::geoid_separation;
+    message.utc_time = GPSHelper::utc_time;
+    message.latitude = GPSHelper::latitude;
+    message.longitude = GPSHelper::longitude;
+    message.fix_quality = GPSHelper::fix_quality;
+    message.num_satellites = GPSHelper::num_satellites;
+    message.hdop = GPSHelper::hdop;
+    message.altitude = GPSHelper::altitude;
+    message.geoid_separation = GPSHelper::geoid_separation;
     RCLCPP_INFO(this->get_logger(), "Publishing to topic GPSData:\nHeader Timestamp: %s\nFrame ID: %s\nTime (UTC): %s\nLatitude: %.8f\nLongitude: %.8f\nFix Quality: %u\nSatellites: %u\nHDOP: %.2f\nAltitude: %.4f m\nGeoid Separation: %.4f m",
-                GPS::format_timestamp(message.header.stamp).c_str(),
+                GPSHelper::format_timestamp(message.header.stamp).c_str(),
                 message.header.frame_id.c_str(),
                 message.utc_time.c_str(),
                 message.latitude,
@@ -82,11 +75,11 @@ int main(int argc, char *argv[])
 {
   rclcpp::init(argc, argv);
   auto node = std::make_shared<GPSPublisher>();
-  int fd = GPS::initGPS();
+  int fd = GPSHelper::initGPS();
   std::thread gps_thread([&node, fd]()
                          {
     while (rclcpp::ok()) {
-      GPS::loopGPS(fd);
+      GPSHelper::loopGPS(fd);
       std::this_thread::sleep_for(std::chrono::milliseconds(100));
     } });
   rclcpp::spin(node);

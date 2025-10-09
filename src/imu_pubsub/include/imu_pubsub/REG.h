@@ -1,5 +1,5 @@
-#ifndef __AHRSREG_H
-#define __AHRSREG_H
+#ifndef SRC_IMU_PUBSUB_INCLUDE_IMU_PUBSUB_REG_H_
+#define SRC_IMU_PUBSUB_INCLUDE_IMU_PUBSUB_REG_H_
 
 #ifdef __cplusplus
 extern "C" {
@@ -292,4 +292,5 @@ extern "C" {
 }
 #endif
 
-#endif
+#endif // SRC_IMU_PUBSUB_INCLUDE_IMU_PUBSUB_REG_H_
+

@@ -1,13 +1,4 @@
-#include <memory>
-
-#include "rclcpp/rclcpp.hpp"         // Error on this line may be due to incorrect VSCode config and NOT an actual error. If building and running works, ignore the error.
-#include "imu_msgs/msg/imu_data.hpp" // Error on this line may be due to incorrect VSCode config and NOT an actual error. If building and running works, ignore the error.
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <sstream>
-#include "imu_pubsub/sensor.h" // Error on this line may be due to incorrect VSCode config and NOT an actual error. If building and running works, ignore the error.
-
+#include "imu_pubsub/imu_helper.h"
 using std::placeholders::_1;
 
 class IMUSubscriber : public rclcpp::Node
@@ -29,10 +20,10 @@ public:
 private:
   void acceleration_callback(const imu_msgs::msg::IMUData::SharedPtr msg)
   {
-    RCLCPP_INFO(this->get_logger(), "[Publishing to topic [IMUAcceleration]:\nHeader Timestamp: %s\nFrame ID: %s\nx: %f\ny: %f\nz: %f", Sensor::format_timestamp(msg->header.stamp).c_str(),
+    RCLCPP_INFO(this->get_logger(), "[Publishing to topic [IMUAcceleration]:\nHeader Timestamp: %s\nFrame ID: %s\nx: %f\ny: %f\nz: %f", IMUHelper::format_timestamp(msg->header.stamp).c_str(),
                 msg->header.frame_id.c_str(), msg->x, msg->y, msg->z);
     ss << "[IMUAcceleration]:\n"
-       << "Header Timestamp: " << Sensor::format_timestamp(msg->header.stamp) << "\n"
+       << "Header Timestamp: " << IMUHelper::format_timestamp(msg->header.stamp) << "\n"
        << "Frame ID: " << msg->header.frame_id << "\n"
        << "Time (UTC): " << msg->utc_time << "\n"
        << "X: " << std::fixed << std::setprecision(4) << msg->x << "\n"
@@ -42,10 +33,10 @@ private:
   void
   angle_callback(const imu_msgs::msg::IMUData::SharedPtr msg)
   {
-    RCLCPP_INFO(this->get_logger(), "[Publishing to topic [IMUAngle]:\nHeader Timestamp: %s\nFrame ID: %s\nx: %f\ny: %f\nz: %f", Sensor::format_timestamp(msg->header.stamp).c_str(),
+    RCLCPP_INFO(this->get_logger(), "[Publishing to topic [IMUAngle]:\nHeader Timestamp: %s\nFrame ID: %s\nx: %f\ny: %f\nz: %f", IMUHelper::format_timestamp(msg->header.stamp).c_str(),
                 msg->header.frame_id.c_str(), msg->x, msg->y, msg->z);
     ss << "[IMUAngle]:\n"
-       << "Header Timestamp: " << Sensor::format_timestamp(msg->header.stamp) << "\n"
+       << "Header Timestamp: " << IMUHelper::format_timestamp(msg->header.stamp) << "\n"
        << "Frame ID: " << msg->header.frame_id << "\n"
        << "Time (UTC): " << msg->utc_time << "\n"
        << "X: " << std::fixed << std::setprecision(4) << msg->x << "\n"
@@ -55,10 +46,10 @@ private:
 
   void gyro_callback(const imu_msgs::msg::IMUData::SharedPtr msg)
   {
-    RCLCPP_INFO(this->get_logger(), "[Publishing to topic [IMUGyro]:\nHeader Timestamp: %s\nFrame ID: %s\nx: %f\ny: %f\nz: %f", Sensor::format_timestamp(msg->header.stamp).c_str(),
+    RCLCPP_INFO(this->get_logger(), "[Publishing to topic [IMUGyro]:\nHeader Timestamp: %s\nFrame ID: %s\nx: %f\ny: %f\nz: %f", IMUHelper::format_timestamp(msg->header.stamp).c_str(),
                 msg->header.frame_id.c_str(), msg->x, msg->y, msg->z);
     ss << "[IMUGyro]:\n"
-       << "Header Timestamp: " << Sensor::format_timestamp(msg->header.stamp) << "\n"
+       << "Header Timestamp: " << IMUHelper::format_timestamp(msg->header.stamp) << "\n"
        << "Frame ID: " << msg->header.frame_id << "\n"
        << "Time (UTC): " << msg->utc_time << "\n"
        << "X: " << std::fixed << std::setprecision(4) << msg->x << "\n"
@@ -68,10 +59,10 @@ private:
 
   void magnet_callback(const imu_msgs::msg::IMUData::SharedPtr msg)
   {
-    RCLCPP_INFO(this->get_logger(), "[Publishing to topic [IMUMagnet]:\nHeader Timestamp: %s\nFrame ID: %s\nx: %f\ny: %f\nz: %f", Sensor::format_timestamp(msg->header.stamp).c_str(),
+    RCLCPP_INFO(this->get_logger(), "[Publishing to topic [IMUMagnet]:\nHeader Timestamp: %s\nFrame ID: %s\nx: %f\ny: %f\nz: %f", IMUHelper::format_timestamp(msg->header.stamp).c_str(),
                 msg->header.frame_id.c_str(), msg->x, msg->y, msg->z);
     ss << "[IMUMagnet]:\n"
-       << "Header Timestamp: " << Sensor::format_timestamp(msg->header.stamp) << "\n"
+       << "Header Timestamp: " << IMUHelper::format_timestamp(msg->header.stamp) << "\n"
        << "Frame ID: " << msg->header.frame_id << "\n"
        << "Time (UTC): " << msg->utc_time << "\n"
        << "X: " << std::fixed << std::setprecision(4) << msg->x << "\n"

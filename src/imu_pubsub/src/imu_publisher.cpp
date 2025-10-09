@@ -1,11 +1,4 @@
-#include <string>
-#include <map>
-#include <chrono>
-#include <memory>
-#include <array>
-#include "rclcpp/rclcpp.hpp"         // Error on this line may be due to incorrect VSCode config and NOT an actual error. If building and running works, ignore the error.
-#include "imu_msgs/msg/imu_data.hpp" // Error on this line may be due to incorrect VSCode config and NOT an actual error. If building and running works, ignore the error.
-#include "imu_pubsub/sensor.h"       // Error on this line may be due to incorrect VSCode config and NOT an actual error. If building and running works, ignore the error.
+#include "imu_pubsub/imu_helper.h"
 using namespace std::chrono_literals;
 
 class IMUPublisher : public rclcpp::Node
@@ -30,10 +23,10 @@ private:
   void timer_callback()
   {
     std::string topic = keys[currentKey];
-    dataMatrix[0] = {Sensor::acc_x, Sensor::acc_y, Sensor::acc_z};
-    dataMatrix[1] = {Sensor::angle_x, Sensor::angle_y, Sensor::angle_z};
-    dataMatrix[2] = {Sensor::gyro_x, Sensor::gyro_y, Sensor::gyro_z};
-    dataMatrix[3] = {Sensor::h_x, Sensor::h_y, Sensor::h_z};
+    dataMatrix[0] = {IMUHelper::acc_x, IMUHelper::acc_y, IMUHelper::acc_z};
+    dataMatrix[1] = {IMUHelper::angle_x, IMUHelper::angle_y, IMUHelper::angle_z};
+    dataMatrix[2] = {IMUHelper::gyro_x, IMUHelper::gyro_y, IMUHelper::gyro_z};
+    dataMatrix[3] = {IMUHelper::h_x, IMUHelper::h_y, IMUHelper::h_z};
 
     auto message = imu_msgs::msg::IMUData();
 
@@ -42,7 +35,7 @@ private:
     message.x = dataMatrix[currentKey][0];
     message.y = dataMatrix[currentKey][1];
     message.z = dataMatrix[currentKey][2];
-    RCLCPP_INFO(this->get_logger(), "Publishing to topic [%s]:\nHeader Timestamp: %s\nFrame ID: %s\nx: %f\ny: %f\nz: %f", topic.c_str(), Sensor::format_timestamp(message.header.stamp).c_str(),
+    RCLCPP_INFO(this->get_logger(), "Publishing to topic [%s]:\nHeader Timestamp: %s\nFrame ID: %s\nx: %f\ny: %f\nz: %f", topic.c_str(), IMUHelper::format_timestamp(message.header.stamp).c_str(),
                 message.header.frame_id.c_str(), message.x, message.y, message.z);
     publishers.at(topic)->publish(message);
     currentKey = (currentKey + 1) % 4;
@@ -66,7 +59,7 @@ int main(int argc, char *argv[])
   std::thread sensor_thread([&node]()
                             {
     while (rclcpp::ok()) {
-      Sensor::initSensor();
+      IMUHelper::initSensor();
       std::this_thread::sleep_for(std::chrono::milliseconds(100));
     } });
   rclcpp::spin(node);

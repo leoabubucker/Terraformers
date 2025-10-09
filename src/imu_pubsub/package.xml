@@ -13,9 +13,13 @@
   <test_depend>ament_lint_common</test_depend>
 
   <depend>rclcpp</depend>
+
+  <!-- for default string msgs -->
+  <depend>std_msgs</depend> 
+
+  <!-- for custom msgs -->
+  <depend>imu_msgs</depend> 
   
-  <depend>std_msgs</depend> <!-- for default string msgs -->
-  <depend>imu_msgs</depend> <!-- for custom msgs -->
   <export>
     <build_type>ament_cmake</build_type>
   </export>

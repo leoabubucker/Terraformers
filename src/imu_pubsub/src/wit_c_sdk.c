@@ -1,4 +1,4 @@
-#include "imu_pubsub/wit_c_sdk.h" // Error on this line may be due to incorrect VSCode config and NOT an actual error. If building and running works, ignore the error.
+#include "imu_pubsub/wit_c_sdk.h"
 
 static SerialWrite p_WitSerialWriteFunc = NULL;
 static WitI2cWrite p_WitI2cWriteFunc    = NULL;

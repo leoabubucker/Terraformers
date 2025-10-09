@@ -1,6 +1,8 @@
 
-#ifndef SERIAL_H
-#define SERIAL_H
+#ifndef SRC_IMU_PUBSUB_INCLUDE_IMU_PUBSUB_SERIAL_H_
+
+#define SRC_IMU_PUBSUB_INCLUDE_IMU_PUBSUB_SERIAL_H_
+
 
 #include <linux/types.h>
 #include <stdio.h>
@@ -25,4 +27,5 @@ int serial_read_data(int fd, unsigned char *val, int len);
 int serial_write_data(int fd, unsigned char *val, int len);
 
 
-#endif
+#endif // SRC_IMU_PUBSUB_INCLUDE_IMU_PUBSUB_SERIAL_H_
+

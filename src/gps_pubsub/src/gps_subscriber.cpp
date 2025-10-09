@@ -1,13 +1,5 @@
-#include <memory>
+#include "gps_pubsub/gps_helper.h"
 
-#include "rclcpp/rclcpp.hpp"         // Error on this line may be due to incorrect VSCode config and NOT an actual error. If building and running works, ignore the error.
-#include "gps_msgs/msg/gps_data.hpp" // Error on this line may be due to incorrect VSCode config and NOT an actual error. If building and running works, ignore the error.
-#include "gps_pubsub/gps.h"          // Error on this line may be due to incorrect VSCode config and NOT an actual error. If building and running works, ignore the error.
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <sstream>
-#include <iomanip>
 
 using std::placeholders::_1;
 
@@ -25,7 +17,7 @@ private:
   void topic_callback(const gps_msgs::msg::GPSData::SharedPtr message)
   {
     RCLCPP_INFO(this->get_logger(), "Listening to topic [GPSData]:\nHeader Timestamp: %s\nFrame ID: %s\nTime (UTC): %s\nLatitude: %.8f\nLongitude: %.8f\nFix Quality: %u\nSatellites: %u\nHDOP: %.2f\nAltitude: %.4f m\nGeoid Separation: %.4f m",
-                GPS::format_timestamp(message->header.stamp).c_str(),
+                GPSHelper::format_timestamp(message->header.stamp).c_str(),
                 message->header.frame_id.c_str(),
                 message->utc_time.c_str(),
                 message->latitude,
@@ -36,7 +28,7 @@ private:
                 message->altitude,
                 message->geoid_separation);
     ss << "[GPSData]:\n"
-       << "Header Timestamp: " << GPS::format_timestamp(message->header.stamp) << "\n"
+       << "Header Timestamp: " << GPSHelper::format_timestamp(message->header.stamp) << "\n"
        << "Frame ID: " << message->header.frame_id << "\n"
        << "Time (UTC): " << message->utc_time << "\n"
        << "Latitude: " << std::fixed << std::setprecision(8) << message->latitude << "\n"

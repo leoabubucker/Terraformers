@@ -1,4 +1,4 @@
-#include "imu_pubsub/serial.h" // Error on this line may be due to incorrect VSCode config and NOT an actual error. If building and running works, ignore the error.
+#include "imu_pubsub/serial.h"
 
 
 int serial_open(unsigned char* dev, unsigned int baud)

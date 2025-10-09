@@ -1,0 +1,2156 @@
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:42.613
+Frame ID: gps_link
+Time (UTC): DEFAULT VALUE
+Latitude: 0.00000000
+Longitude: -1.00000000
+Fix Quality: 0
+Satellites: 255
+HDOP: 0.00
+Altitude: 0.0000 m
+Geoid Separation: -1.0000 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:43.113
+Frame ID: gps_link
+Time (UTC): DEFAULT VALUE
+Latitude: 0.00000000
+Longitude: -1.00000000
+Fix Quality: 0
+Satellites: 255
+HDOP: 0.00
+Altitude: 0.0000 m
+Geoid Separation: -1.0000 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:43.613
+Frame ID: gps_link
+Time (UTC): DEFAULT VALUE
+Latitude: 0.00000000
+Longitude: -1.00000000
+Fix Quality: 0
+Satellites: 255
+HDOP: 0.00
+Altitude: 0.0000 m
+Geoid Separation: -1.0000 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:44.113
+Frame ID: gps_link
+Time (UTC): DEFAULT VALUE
+Latitude: 0.00000000
+Longitude: -1.00000000
+Fix Quality: 0
+Satellites: 255
+HDOP: 0.00
+Altitude: 0.0000 m
+Geoid Separation: -1.0000 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:44.613
+Frame ID: gps_link
+Time (UTC): 001844.00
+Latitude: 38.99219514
+Longitude: -76.93749270
+Fix Quality: 1
+Satellites: 15
+HDOP: 1.40
+Altitude: 20.2397 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:45.113
+Frame ID: gps_link
+Time (UTC): 001844.00
+Latitude: 38.99219514
+Longitude: -76.93749270
+Fix Quality: 1
+Satellites: 15
+HDOP: 1.40
+Altitude: 20.2397 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:45.613
+Frame ID: gps_link
+Time (UTC): 001845.00
+Latitude: 38.99219370
+Longitude: -76.93749159
+Fix Quality: 1
+Satellites: 15
+HDOP: 1.40
+Altitude: 20.2367 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:46.113
+Frame ID: gps_link
+Time (UTC): 001845.00
+Latitude: 38.99219370
+Longitude: -76.93749159
+Fix Quality: 1
+Satellites: 15
+HDOP: 1.40
+Altitude: 20.2367 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:46.613
+Frame ID: gps_link
+Time (UTC): 001845.00
+Latitude: 38.99219370
+Longitude: -76.93749159
+Fix Quality: 1
+Satellites: 15
+HDOP: 1.40
+Altitude: 20.2367 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:47.113
+Frame ID: gps_link
+Time (UTC): 001846.00
+Latitude: 38.99219267
+Longitude: -76.93749098
+Fix Quality: 1
+Satellites: 15
+HDOP: 1.40
+Altitude: 20.2319 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:47.613
+Frame ID: gps_link
+Time (UTC): 001846.00
+Latitude: 38.99219267
+Longitude: -76.93749098
+Fix Quality: 1
+Satellites: 15
+HDOP: 1.40
+Altitude: 20.2319 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:48.113
+Frame ID: gps_link
+Time (UTC): 001847.00
+Latitude: 38.99219221
+Longitude: -76.93749168
+Fix Quality: 1
+Satellites: 15
+HDOP: 1.40
+Altitude: 20.2290 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:48.613
+Frame ID: gps_link
+Time (UTC): 001847.00
+Latitude: 38.99219221
+Longitude: -76.93749168
+Fix Quality: 1
+Satellites: 15
+HDOP: 1.40
+Altitude: 20.2290 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:49.113
+Frame ID: gps_link
+Time (UTC): 001848.00
+Latitude: 38.99219339
+Longitude: -76.93749552
+Fix Quality: 1
+Satellites: 14
+HDOP: 2.50
+Altitude: 20.2368 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:49.613
+Frame ID: gps_link
+Time (UTC): 001848.00
+Latitude: 38.99219339
+Longitude: -76.93749552
+Fix Quality: 1
+Satellites: 14
+HDOP: 2.50
+Altitude: 20.2368 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:50.113
+Frame ID: gps_link
+Time (UTC): 001848.00
+Latitude: 38.99219339
+Longitude: -76.93749552
+Fix Quality: 1
+Satellites: 14
+HDOP: 2.50
+Altitude: 20.2368 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:50.613
+Frame ID: gps_link
+Time (UTC): 001850.00
+Latitude: 38.99220133
+Longitude: -76.93750398
+Fix Quality: 1
+Satellites: 14
+HDOP: 2.50
+Altitude: 20.5294 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:51.113
+Frame ID: gps_link
+Time (UTC): 001850.00
+Latitude: 38.99220133
+Longitude: -76.93750398
+Fix Quality: 1
+Satellites: 14
+HDOP: 2.50
+Altitude: 20.5294 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:51.613
+Frame ID: gps_link
+Time (UTC): 001851.00
+Latitude: 38.99220202
+Longitude: -76.93750645
+Fix Quality: 1
+Satellites: 14
+HDOP: 2.50
+Altitude: 20.7008 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:52.113
+Frame ID: gps_link
+Time (UTC): 001851.00
+Latitude: 38.99220202
+Longitude: -76.93750645
+Fix Quality: 1
+Satellites: 14
+HDOP: 2.50
+Altitude: 20.7008 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:52.613
+Frame ID: gps_link
+Time (UTC): 001852.00
+Latitude: 38.99221093
+Longitude: -76.93750784
+Fix Quality: 1
+Satellites: 14
+HDOP: 2.50
+Altitude: 20.1222 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:53.113
+Frame ID: gps_link
+Time (UTC): 001852.00
+Latitude: 38.99221093
+Longitude: -76.93750784
+Fix Quality: 1
+Satellites: 14
+HDOP: 2.50
+Altitude: 20.1222 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:53.613
+Frame ID: gps_link
+Time (UTC): 001852.00
+Latitude: 38.99221093
+Longitude: -76.93750784
+Fix Quality: 1
+Satellites: 14
+HDOP: 2.50
+Altitude: 20.1222 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:54.113
+Frame ID: gps_link
+Time (UTC): 001853.00
+Latitude: 38.99222224
+Longitude: -76.93751244
+Fix Quality: 1
+Satellites: 15
+HDOP: 1.50
+Altitude: 19.6489 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:54.613
+Frame ID: gps_link
+Time (UTC): 001853.00
+Latitude: 38.99222224
+Longitude: -76.93751244
+Fix Quality: 1
+Satellites: 15
+HDOP: 1.50
+Altitude: 19.6489 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:55.113
+Frame ID: gps_link
+Time (UTC): 001854.00
+Latitude: 38.99223311
+Longitude: -76.93751633
+Fix Quality: 1
+Satellites: 15
+HDOP: 1.50
+Altitude: 19.4914 m
+Geoid Separation: -33.0523 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:55.613
+Frame ID: gps_link
+Time (UTC): 001854.00
+Latitude: 38.99223311
+Longitude: -76.93751633
+Fix Quality: 1
+Satellites: 15
+HDOP: 1.50
+Altitude: 19.4914 m
+Geoid Separation: -33.0523 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:56.113
+Frame ID: gps_link
+Time (UTC): 001855.00
+Latitude: 38.99224378
+Longitude: -76.93751852
+Fix Quality: 1
+Satellites: 14
+HDOP: 2.50
+Altitude: 19.5877 m
+Geoid Separation: -33.0523 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:56.613
+Frame ID: gps_link
+Time (UTC): 001855.00
+Latitude: 38.99224378
+Longitude: -76.93751852
+Fix Quality: 1
+Satellites: 14
+HDOP: 2.50
+Altitude: 19.5877 m
+Geoid Separation: -33.0523 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:57.113
+Frame ID: gps_link
+Time (UTC): 001856.00
+Latitude: 38.99225584
+Longitude: -76.93751842
+Fix Quality: 1
+Satellites: 15
+HDOP: 1.50
+Altitude: 19.7845 m
+Geoid Separation: -33.0523 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:57.613
+Frame ID: gps_link
+Time (UTC): 001856.00
+Latitude: 38.99225584
+Longitude: -76.93751842
+Fix Quality: 1
+Satellites: 15
+HDOP: 1.50
+Altitude: 19.7845 m
+Geoid Separation: -33.0523 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:58.113
+Frame ID: gps_link
+Time (UTC): 001856.00
+Latitude: 38.99225584
+Longitude: -76.93751842
+Fix Quality: 1
+Satellites: 15
+HDOP: 1.50
+Altitude: 19.7845 m
+Geoid Separation: -33.0523 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:58.613
+Frame ID: gps_link
+Time (UTC): 001858.00
+Latitude: 38.99227838
+Longitude: -76.93751303
+Fix Quality: 1
+Satellites: 16
+HDOP: 1.30
+Altitude: 19.6539 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:59.113
+Frame ID: gps_link
+Time (UTC): 001858.00
+Latitude: 38.99227838
+Longitude: -76.93751303
+Fix Quality: 1
+Satellites: 16
+HDOP: 1.30
+Altitude: 19.6539 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:18:59.613
+Frame ID: gps_link
+Time (UTC): 001859.00
+Latitude: 38.99228770
+Longitude: -76.93750962
+Fix Quality: 1
+Satellites: 16
+HDOP: 1.30
+Altitude: 19.9838 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:00.113
+Frame ID: gps_link
+Time (UTC): 001859.00
+Latitude: 38.99228770
+Longitude: -76.93750962
+Fix Quality: 1
+Satellites: 16
+HDOP: 1.30
+Altitude: 19.9838 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:00.613
+Frame ID: gps_link
+Time (UTC): 001900.00
+Latitude: 38.99229827
+Longitude: -76.93750825
+Fix Quality: 1
+Satellites: 16
+HDOP: 1.30
+Altitude: 20.2489 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:01.113
+Frame ID: gps_link
+Time (UTC): 001900.00
+Latitude: 38.99229827
+Longitude: -76.93750825
+Fix Quality: 1
+Satellites: 16
+HDOP: 1.30
+Altitude: 20.2489 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:01.613
+Frame ID: gps_link
+Time (UTC): 001900.00
+Latitude: 38.99229827
+Longitude: -76.93750825
+Fix Quality: 1
+Satellites: 16
+HDOP: 1.30
+Altitude: 20.2489 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:02.113
+Frame ID: gps_link
+Time (UTC): 001901.00
+Latitude: 38.99230884
+Longitude: -76.93750669
+Fix Quality: 1
+Satellites: 16
+HDOP: 1.30
+Altitude: 20.4563 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:02.613
+Frame ID: gps_link
+Time (UTC): 001901.00
+Latitude: 38.99230884
+Longitude: -76.93750669
+Fix Quality: 1
+Satellites: 16
+HDOP: 1.30
+Altitude: 20.4563 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:03.113
+Frame ID: gps_link
+Time (UTC): 001902.00
+Latitude: 38.99231909
+Longitude: -76.93750520
+Fix Quality: 1
+Satellites: 16
+HDOP: 1.30
+Altitude: 20.6018 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:03.613
+Frame ID: gps_link
+Time (UTC): 001902.00
+Latitude: 38.99231909
+Longitude: -76.93750520
+Fix Quality: 1
+Satellites: 16
+HDOP: 1.30
+Altitude: 20.6018 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:04.113
+Frame ID: gps_link
+Time (UTC): 001903.00
+Latitude: 38.99232853
+Longitude: -76.93750351
+Fix Quality: 1
+Satellites: 16
+HDOP: 1.30
+Altitude: 20.7066 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:04.613
+Frame ID: gps_link
+Time (UTC): 001903.00
+Latitude: 38.99232853
+Longitude: -76.93750351
+Fix Quality: 1
+Satellites: 16
+HDOP: 1.30
+Altitude: 20.7066 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:05.113
+Frame ID: gps_link
+Time (UTC): 001903.00
+Latitude: 38.99232853
+Longitude: -76.93750351
+Fix Quality: 1
+Satellites: 16
+HDOP: 1.30
+Altitude: 20.7066 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:05.613
+Frame ID: gps_link
+Time (UTC): 001904.00
+Latitude: 38.99233599
+Longitude: -76.93750313
+Fix Quality: 1
+Satellites: 16
+HDOP: 1.30
+Altitude: 20.5892 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:06.113
+Frame ID: gps_link
+Time (UTC): 001904.00
+Latitude: 38.99233599
+Longitude: -76.93750313
+Fix Quality: 1
+Satellites: 16
+HDOP: 1.30
+Altitude: 20.5892 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:06.613
+Frame ID: gps_link
+Time (UTC): 001906.00
+Latitude: 38.99235239
+Longitude: -76.93750122
+Fix Quality: 1
+Satellites: 16
+HDOP: 1.30
+Altitude: 20.6695 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:07.113
+Frame ID: gps_link
+Time (UTC): 001906.00
+Latitude: 38.99235239
+Longitude: -76.93750122
+Fix Quality: 1
+Satellites: 16
+HDOP: 1.30
+Altitude: 20.6695 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:07.613
+Frame ID: gps_link
+Time (UTC): 001907.00
+Latitude: 38.99236112
+Longitude: -76.93749773
+Fix Quality: 1
+Satellites: 16
+HDOP: 1.30
+Altitude: 20.8140 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:08.113
+Frame ID: gps_link
+Time (UTC): 001907.00
+Latitude: 38.99236112
+Longitude: -76.93749773
+Fix Quality: 1
+Satellites: 16
+HDOP: 1.30
+Altitude: 20.8140 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:08.613
+Frame ID: gps_link
+Time (UTC): 001908.00
+Latitude: 38.99237011
+Longitude: -76.93748925
+Fix Quality: 1
+Satellites: 16
+HDOP: 1.30
+Altitude: 20.8757 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:09.113
+Frame ID: gps_link
+Time (UTC): 001908.00
+Latitude: 38.99237011
+Longitude: -76.93748925
+Fix Quality: 1
+Satellites: 16
+HDOP: 1.30
+Altitude: 20.8757 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:09.613
+Frame ID: gps_link
+Time (UTC): 001908.00
+Latitude: 38.99237011
+Longitude: -76.93748925
+Fix Quality: 1
+Satellites: 16
+HDOP: 1.30
+Altitude: 20.8757 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:10.113
+Frame ID: gps_link
+Time (UTC): 001909.00
+Latitude: 38.99237981
+Longitude: -76.93748240
+Fix Quality: 1
+Satellites: 16
+HDOP: 1.30
+Altitude: 20.9920 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:10.613
+Frame ID: gps_link
+Time (UTC): 001909.00
+Latitude: 38.99237981
+Longitude: -76.93748240
+Fix Quality: 1
+Satellites: 16
+HDOP: 1.30
+Altitude: 20.9920 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:11.113
+Frame ID: gps_link
+Time (UTC): 001910.00
+Latitude: 38.99238934
+Longitude: -76.93747790
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 21.1703 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:11.613
+Frame ID: gps_link
+Time (UTC): 001910.00
+Latitude: 38.99238934
+Longitude: -76.93747790
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 21.1703 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:12.113
+Frame ID: gps_link
+Time (UTC): 001911.00
+Latitude: 38.99239800
+Longitude: -76.93747585
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 21.3747 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:12.613
+Frame ID: gps_link
+Time (UTC): 001911.00
+Latitude: 38.99239800
+Longitude: -76.93747585
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 21.3747 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:13.113
+Frame ID: gps_link
+Time (UTC): 001911.00
+Latitude: 38.99239800
+Longitude: -76.93747585
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 21.3747 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:13.613
+Frame ID: gps_link
+Time (UTC): 001913.00
+Latitude: 38.99240656
+Longitude: -76.93747553
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 21.5225 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:14.113
+Frame ID: gps_link
+Time (UTC): 001913.00
+Latitude: 38.99240656
+Longitude: -76.93747553
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 21.5225 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:14.613
+Frame ID: gps_link
+Time (UTC): 001914.00
+Latitude: 38.99241257
+Longitude: -76.93747401
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 21.5974 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:15.113
+Frame ID: gps_link
+Time (UTC): 001914.00
+Latitude: 38.99241257
+Longitude: -76.93747401
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 21.5974 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:15.613
+Frame ID: gps_link
+Time (UTC): 001915.00
+Latitude: 38.99242000
+Longitude: -76.93747067
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 21.7131 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:16.113
+Frame ID: gps_link
+Time (UTC): 001915.00
+Latitude: 38.99242000
+Longitude: -76.93747067
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 21.7131 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:16.613
+Frame ID: gps_link
+Time (UTC): 001915.00
+Latitude: 38.99242000
+Longitude: -76.93747067
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 21.7131 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:17.113
+Frame ID: gps_link
+Time (UTC): 001916.00
+Latitude: 38.99242763
+Longitude: -76.93746790
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 21.7943 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:17.613
+Frame ID: gps_link
+Time (UTC): 001916.00
+Latitude: 38.99242763
+Longitude: -76.93746790
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 21.7943 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:18.113
+Frame ID: gps_link
+Time (UTC): 001917.00
+Latitude: 38.99241958
+Longitude: -76.93746483
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 21.8927 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:18.613
+Frame ID: gps_link
+Time (UTC): 001917.00
+Latitude: 38.99241958
+Longitude: -76.93746483
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 21.8927 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:19.113
+Frame ID: gps_link
+Time (UTC): 001918.00
+Latitude: 38.99241160
+Longitude: -76.93746128
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.0335 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:19.613
+Frame ID: gps_link
+Time (UTC): 001918.00
+Latitude: 38.99241160
+Longitude: -76.93746128
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.0335 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:20.113
+Frame ID: gps_link
+Time (UTC): 001919.00
+Latitude: 38.99240307
+Longitude: -76.93746208
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.0737 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:20.613
+Frame ID: gps_link
+Time (UTC): 001919.00
+Latitude: 38.99240307
+Longitude: -76.93746208
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.0737 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:21.113
+Frame ID: gps_link
+Time (UTC): 001919.00
+Latitude: 38.99240307
+Longitude: -76.93746208
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.0737 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:21.613
+Frame ID: gps_link
+Time (UTC): 001921.00
+Latitude: 38.99238394
+Longitude: -76.93746370
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.2687 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:22.113
+Frame ID: gps_link
+Time (UTC): 001921.00
+Latitude: 38.99238394
+Longitude: -76.93746370
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.2687 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:22.613
+Frame ID: gps_link
+Time (UTC): 001922.00
+Latitude: 38.99237450
+Longitude: -76.93746584
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.3850 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:23.113
+Frame ID: gps_link
+Time (UTC): 001922.00
+Latitude: 38.99237450
+Longitude: -76.93746584
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.3850 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:23.613
+Frame ID: gps_link
+Time (UTC): 001923.00
+Latitude: 38.99236541
+Longitude: -76.93746870
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.5268 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:24.113
+Frame ID: gps_link
+Time (UTC): 001923.00
+Latitude: 38.99236541
+Longitude: -76.93746870
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.5268 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:24.613
+Frame ID: gps_link
+Time (UTC): 001923.00
+Latitude: 38.99236541
+Longitude: -76.93746870
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.5268 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:25.113
+Frame ID: gps_link
+Time (UTC): 001924.00
+Latitude: 38.99235647
+Longitude: -76.93747196
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.6014 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:25.613
+Frame ID: gps_link
+Time (UTC): 001924.00
+Latitude: 38.99235647
+Longitude: -76.93747196
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.6014 m
+Geoid Separation: -33.0525 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:26.113
+Frame ID: gps_link
+Time (UTC): 001925.00
+Latitude: 38.99234705
+Longitude: -76.93747608
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.7081 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:26.613
+Frame ID: gps_link
+Time (UTC): 001925.00
+Latitude: 38.99234705
+Longitude: -76.93747608
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.7081 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:27.113
+Frame ID: gps_link
+Time (UTC): 001926.00
+Latitude: 38.99233652
+Longitude: -76.93748021
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.8439 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:27.613
+Frame ID: gps_link
+Time (UTC): 001926.00
+Latitude: 38.99233652
+Longitude: -76.93748021
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.8439 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:28.113
+Frame ID: gps_link
+Time (UTC): 001926.00
+Latitude: 38.99233652
+Longitude: -76.93748021
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.8439 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:28.613
+Frame ID: gps_link
+Time (UTC): 001927.00
+Latitude: 38.99232588
+Longitude: -76.93748407
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.0060 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:29.113
+Frame ID: gps_link
+Time (UTC): 001927.00
+Latitude: 38.99232588
+Longitude: -76.93748407
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.0060 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:29.613
+Frame ID: gps_link
+Time (UTC): 001929.00
+Latitude: 38.99230518
+Longitude: -76.93748867
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.3593 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:30.113
+Frame ID: gps_link
+Time (UTC): 001929.00
+Latitude: 38.99230518
+Longitude: -76.93748867
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.3593 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:30.613
+Frame ID: gps_link
+Time (UTC): 001930.00
+Latitude: 38.99229355
+Longitude: -76.93748873
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.5262 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:31.113
+Frame ID: gps_link
+Time (UTC): 001930.00
+Latitude: 38.99229355
+Longitude: -76.93748873
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.5262 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:31.613
+Frame ID: gps_link
+Time (UTC): 001931.00
+Latitude: 38.99228193
+Longitude: -76.93748877
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.6137 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:32.113
+Frame ID: gps_link
+Time (UTC): 001931.00
+Latitude: 38.99228193
+Longitude: -76.93748877
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.6137 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:32.613
+Frame ID: gps_link
+Time (UTC): 001931.00
+Latitude: 38.99228193
+Longitude: -76.93748877
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.6137 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:33.113
+Frame ID: gps_link
+Time (UTC): 001932.00
+Latitude: 38.99227133
+Longitude: -76.93748990
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.6202 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:33.613
+Frame ID: gps_link
+Time (UTC): 001932.00
+Latitude: 38.99227133
+Longitude: -76.93748990
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.6202 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:34.113
+Frame ID: gps_link
+Time (UTC): 001933.00
+Latitude: 38.99226124
+Longitude: -76.93749216
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.6443 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:34.613
+Frame ID: gps_link
+Time (UTC): 001933.00
+Latitude: 38.99226124
+Longitude: -76.93749216
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.6443 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:35.113
+Frame ID: gps_link
+Time (UTC): 001934.00
+Latitude: 38.99225176
+Longitude: -76.93749483
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.6751 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:35.613
+Frame ID: gps_link
+Time (UTC): 001934.00
+Latitude: 38.99225176
+Longitude: -76.93749483
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.6751 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:36.113
+Frame ID: gps_link
+Time (UTC): 001934.00
+Latitude: 38.99225176
+Longitude: -76.93749483
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.6751 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:36.613
+Frame ID: gps_link
+Time (UTC): 001936.00
+Latitude: 38.99223424
+Longitude: -76.93750009
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.7222 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:37.113
+Frame ID: gps_link
+Time (UTC): 001936.00
+Latitude: 38.99223424
+Longitude: -76.93750009
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.7222 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:37.613
+Frame ID: gps_link
+Time (UTC): 001937.00
+Latitude: 38.99222541
+Longitude: -76.93750171
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.7237 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:38.113
+Frame ID: gps_link
+Time (UTC): 001937.00
+Latitude: 38.99222541
+Longitude: -76.93750171
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.7237 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:38.613
+Frame ID: gps_link
+Time (UTC): 001938.00
+Latitude: 38.99222133
+Longitude: -76.93750314
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.7340 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:39.113
+Frame ID: gps_link
+Time (UTC): 001938.00
+Latitude: 38.99222133
+Longitude: -76.93750314
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.7340 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:39.613
+Frame ID: gps_link
+Time (UTC): 001938.00
+Latitude: 38.99222133
+Longitude: -76.93750314
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.7340 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:40.113
+Frame ID: gps_link
+Time (UTC): 001939.00
+Latitude: 38.99222007
+Longitude: -76.93750431
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.7442 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:40.613
+Frame ID: gps_link
+Time (UTC): 001939.00
+Latitude: 38.99222007
+Longitude: -76.93750431
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.7442 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:41.113
+Frame ID: gps_link
+Time (UTC): 001940.00
+Latitude: 38.99221991
+Longitude: -76.93750413
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.7551 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:41.613
+Frame ID: gps_link
+Time (UTC): 001940.00
+Latitude: 38.99221991
+Longitude: -76.93750413
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.7551 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:42.113
+Frame ID: gps_link
+Time (UTC): 001941.00
+Latitude: 38.99222010
+Longitude: -76.93750347
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.7705 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:42.613
+Frame ID: gps_link
+Time (UTC): 001941.00
+Latitude: 38.99222010
+Longitude: -76.93750347
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.7705 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:43.113
+Frame ID: gps_link
+Time (UTC): 001942.00
+Latitude: 38.99222047
+Longitude: -76.93750298
+Fix Quality: 1
+Satellites: 17
+HDOP: 1.20
+Altitude: 23.7743 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:43.613
+Frame ID: gps_link
+Time (UTC): 001942.00
+Latitude: 38.99222047
+Longitude: -76.93750298
+Fix Quality: 1
+Satellites: 17
+HDOP: 1.20
+Altitude: 23.7743 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:44.113
+Frame ID: gps_link
+Time (UTC): 001942.00
+Latitude: 38.99222047
+Longitude: -76.93750298
+Fix Quality: 1
+Satellites: 17
+HDOP: 1.20
+Altitude: 23.7743 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:44.613
+Frame ID: gps_link
+Time (UTC): 001944.00
+Latitude: 38.99222444
+Longitude: -76.93750662
+Fix Quality: 1
+Satellites: 17
+HDOP: 1.20
+Altitude: 23.7929 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:45.113
+Frame ID: gps_link
+Time (UTC): 001944.00
+Latitude: 38.99222444
+Longitude: -76.93750662
+Fix Quality: 1
+Satellites: 17
+HDOP: 1.20
+Altitude: 23.7929 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:45.613
+Frame ID: gps_link
+Time (UTC): 001945.00
+Latitude: 38.99223138
+Longitude: -76.93750743
+Fix Quality: 1
+Satellites: 17
+HDOP: 1.20
+Altitude: 23.7236 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:46.113
+Frame ID: gps_link
+Time (UTC): 001945.00
+Latitude: 38.99223138
+Longitude: -76.93750743
+Fix Quality: 1
+Satellites: 17
+HDOP: 1.20
+Altitude: 23.7236 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:46.613
+Frame ID: gps_link
+Time (UTC): 001946.00
+Latitude: 38.99224098
+Longitude: -76.93750839
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.7674 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:47.113
+Frame ID: gps_link
+Time (UTC): 001946.00
+Latitude: 38.99224098
+Longitude: -76.93750839
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.7674 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:47.613
+Frame ID: gps_link
+Time (UTC): 001946.00
+Latitude: 38.99224098
+Longitude: -76.93750839
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.7674 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:48.113
+Frame ID: gps_link
+Time (UTC): 001947.00
+Latitude: 38.99225055
+Longitude: -76.93750998
+Fix Quality: 1
+Satellites: 17
+HDOP: 1.20
+Altitude: 23.7800 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:48.613
+Frame ID: gps_link
+Time (UTC): 001947.00
+Latitude: 38.99225055
+Longitude: -76.93750998
+Fix Quality: 1
+Satellites: 17
+HDOP: 1.20
+Altitude: 23.7800 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:49.113
+Frame ID: gps_link
+Time (UTC): 001948.00
+Latitude: 38.99225980
+Longitude: -76.93750886
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.7414 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:49.613
+Frame ID: gps_link
+Time (UTC): 001948.00
+Latitude: 38.99225980
+Longitude: -76.93750886
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.7414 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:50.113
+Frame ID: gps_link
+Time (UTC): 001949.00
+Latitude: 38.99226738
+Longitude: -76.93750643
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.6395 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:50.613
+Frame ID: gps_link
+Time (UTC): 001949.00
+Latitude: 38.99226738
+Longitude: -76.93750643
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.6395 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:51.113
+Frame ID: gps_link
+Time (UTC): 001949.00
+Latitude: 38.99226738
+Longitude: -76.93750643
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.6395 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:51.613
+Frame ID: gps_link
+Time (UTC): 001950.00
+Latitude: 38.99227538
+Longitude: -76.93750254
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.4292 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:52.113
+Frame ID: gps_link
+Time (UTC): 001950.00
+Latitude: 38.99227538
+Longitude: -76.93750254
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.4292 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:52.613
+Frame ID: gps_link
+Time (UTC): 001952.00
+Latitude: 38.99229126
+Longitude: -76.93749563
+Fix Quality: 1
+Satellites: 17
+HDOP: 1.20
+Altitude: 23.0568 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:53.113
+Frame ID: gps_link
+Time (UTC): 001952.00
+Latitude: 38.99229126
+Longitude: -76.93749563
+Fix Quality: 1
+Satellites: 17
+HDOP: 1.20
+Altitude: 23.0568 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:53.613
+Frame ID: gps_link
+Time (UTC): 001953.00
+Latitude: 38.99230062
+Longitude: -76.93749123
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.0252 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:54.113
+Frame ID: gps_link
+Time (UTC): 001953.00
+Latitude: 38.99230062
+Longitude: -76.93749123
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.0252 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:54.613
+Frame ID: gps_link
+Time (UTC): 001954.00
+Latitude: 38.99231005
+Longitude: -76.93748636
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.0027 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:55.113
+Frame ID: gps_link
+Time (UTC): 001954.00
+Latitude: 38.99231005
+Longitude: -76.93748636
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.0027 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:55.613
+Frame ID: gps_link
+Time (UTC): 001954.00
+Latitude: 38.99231005
+Longitude: -76.93748636
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 23.0027 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:56.113
+Frame ID: gps_link
+Time (UTC): 001955.00
+Latitude: 38.99231912
+Longitude: -76.93748347
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.8989 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:56.613
+Frame ID: gps_link
+Time (UTC): 001955.00
+Latitude: 38.99231912
+Longitude: -76.93748347
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.8989 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:57.113
+Frame ID: gps_link
+Time (UTC): 001956.00
+Latitude: 38.99232966
+Longitude: -76.93748086
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.8706 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:57.613
+Frame ID: gps_link
+Time (UTC): 001956.00
+Latitude: 38.99232966
+Longitude: -76.93748086
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.8706 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:58.113
+Frame ID: gps_link
+Time (UTC): 001957.00
+Latitude: 38.99234096
+Longitude: -76.93747907
+Fix Quality: 1
+Satellites: 17
+HDOP: 1.30
+Altitude: 22.8678 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:58.613
+Frame ID: gps_link
+Time (UTC): 001957.00
+Latitude: 38.99234096
+Longitude: -76.93747907
+Fix Quality: 1
+Satellites: 17
+HDOP: 1.30
+Altitude: 22.8678 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:59.113
+Frame ID: gps_link
+Time (UTC): 001957.00
+Latitude: 38.99234096
+Longitude: -76.93747907
+Fix Quality: 1
+Satellites: 17
+HDOP: 1.30
+Altitude: 22.8678 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:19:59.613
+Frame ID: gps_link
+Time (UTC): 001959.00
+Latitude: 38.99233809
+Longitude: -76.93748500
+Fix Quality: 1
+Satellites: 17
+HDOP: 1.30
+Altitude: 22.6076 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:00.113
+Frame ID: gps_link
+Time (UTC): 001959.00
+Latitude: 38.99233809
+Longitude: -76.93748500
+Fix Quality: 1
+Satellites: 17
+HDOP: 1.30
+Altitude: 22.6076 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:00.613
+Frame ID: gps_link
+Time (UTC): 002000.00
+Latitude: 38.99232791
+Longitude: -76.93748702
+Fix Quality: 1
+Satellites: 17
+HDOP: 1.30
+Altitude: 22.5644 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:01.113
+Frame ID: gps_link
+Time (UTC): 002000.00
+Latitude: 38.99232791
+Longitude: -76.93748702
+Fix Quality: 1
+Satellites: 17
+HDOP: 1.30
+Altitude: 22.5644 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:01.613
+Frame ID: gps_link
+Time (UTC): 002001.00
+Latitude: 38.99231734
+Longitude: -76.93748968
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.5667 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:02.113
+Frame ID: gps_link
+Time (UTC): 002001.00
+Latitude: 38.99231734
+Longitude: -76.93748968
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.5667 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:02.613
+Frame ID: gps_link
+Time (UTC): 002001.00
+Latitude: 38.99231734
+Longitude: -76.93748968
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.5667 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:03.113
+Frame ID: gps_link
+Time (UTC): 002002.00
+Latitude: 38.99230578
+Longitude: -76.93749284
+Fix Quality: 1
+Satellites: 17
+HDOP: 1.30
+Altitude: 22.5911 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:03.613
+Frame ID: gps_link
+Time (UTC): 002002.00
+Latitude: 38.99230578
+Longitude: -76.93749284
+Fix Quality: 1
+Satellites: 17
+HDOP: 1.30
+Altitude: 22.5911 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:04.113
+Frame ID: gps_link
+Time (UTC): 002003.00
+Latitude: 38.99229341
+Longitude: -76.93749537
+Fix Quality: 1
+Satellites: 17
+HDOP: 1.30
+Altitude: 22.6225 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:04.613
+Frame ID: gps_link
+Time (UTC): 002003.00
+Latitude: 38.99229341
+Longitude: -76.93749537
+Fix Quality: 1
+Satellites: 17
+HDOP: 1.30
+Altitude: 22.6225 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:05.113
+Frame ID: gps_link
+Time (UTC): 002004.00
+Latitude: 38.99227972
+Longitude: -76.93749668
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.6168 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:05.613
+Frame ID: gps_link
+Time (UTC): 002004.00
+Latitude: 38.99227972
+Longitude: -76.93749668
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.6168 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:06.113
+Frame ID: gps_link
+Time (UTC): 002005.00
+Latitude: 38.99226560
+Longitude: -76.93749761
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.6188 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:06.613
+Frame ID: gps_link
+Time (UTC): 002005.00
+Latitude: 38.99226560
+Longitude: -76.93749761
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.6188 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:07.113
+Frame ID: gps_link
+Time (UTC): 002005.00
+Latitude: 38.99226560
+Longitude: -76.93749761
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.6188 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:07.613
+Frame ID: gps_link
+Time (UTC): 002007.00
+Latitude: 38.99223656
+Longitude: -76.93750102
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.6613 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:08.113
+Frame ID: gps_link
+Time (UTC): 002007.00
+Latitude: 38.99223656
+Longitude: -76.93750102
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.6613 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:08.613
+Frame ID: gps_link
+Time (UTC): 002008.00
+Latitude: 38.99222377
+Longitude: -76.93750017
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.6978 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:09.113
+Frame ID: gps_link
+Time (UTC): 002008.00
+Latitude: 38.99222377
+Longitude: -76.93750017
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.6978 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:09.613
+Frame ID: gps_link
+Time (UTC): 002009.00
+Latitude: 38.99221113
+Longitude: -76.93749784
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.7160 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:10.113
+Frame ID: gps_link
+Time (UTC): 002009.00
+Latitude: 38.99221113
+Longitude: -76.93749784
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.7160 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:10.613
+Frame ID: gps_link
+Time (UTC): 002009.00
+Latitude: 38.99221113
+Longitude: -76.93749784
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.7160 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:11.113
+Frame ID: gps_link
+Time (UTC): 002010.00
+Latitude: 38.99219797
+Longitude: -76.93749544
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.7336 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:11.613
+Frame ID: gps_link
+Time (UTC): 002010.00
+Latitude: 38.99219797
+Longitude: -76.93749544
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.7336 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:12.113
+Frame ID: gps_link
+Time (UTC): 002011.00
+Latitude: 38.99218527
+Longitude: -76.93749199
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.7550 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:12.613
+Frame ID: gps_link
+Time (UTC): 002011.00
+Latitude: 38.99218527
+Longitude: -76.93749199
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.7550 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:13.113
+Frame ID: gps_link
+Time (UTC): 002012.00
+Latitude: 38.99218581
+Longitude: -76.93748818
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.7457 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:13.613
+Frame ID: gps_link
+Time (UTC): 002012.00
+Latitude: 38.99218581
+Longitude: -76.93748818
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.7457 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:14.113
+Frame ID: gps_link
+Time (UTC): 002012.00
+Latitude: 38.99218581
+Longitude: -76.93748818
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.7457 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:14.613
+Frame ID: gps_link
+Time (UTC): 002013.00
+Latitude: 38.99218617
+Longitude: -76.93748573
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.7368 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:15.113
+Frame ID: gps_link
+Time (UTC): 002013.00
+Latitude: 38.99218617
+Longitude: -76.93748573
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.7368 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:15.613
+Frame ID: gps_link
+Time (UTC): 002015.00
+Latitude: 38.99218593
+Longitude: -76.93748413
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.7119 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:16.113
+Frame ID: gps_link
+Time (UTC): 002015.00
+Latitude: 38.99218593
+Longitude: -76.93748413
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.7119 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:16.613
+Frame ID: gps_link
+Time (UTC): 002016.00
+Latitude: 38.99218584
+Longitude: -76.93748434
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.7060 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:17.113
+Frame ID: gps_link
+Time (UTC): 002016.00
+Latitude: 38.99218584
+Longitude: -76.93748434
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.7060 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:17.613
+Frame ID: gps_link
+Time (UTC): 002017.00
+Latitude: 38.99218605
+Longitude: -76.93748414
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.7040 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:18.113
+Frame ID: gps_link
+Time (UTC): 002017.00
+Latitude: 38.99218605
+Longitude: -76.93748414
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.7040 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:18.613
+Frame ID: gps_link
+Time (UTC): 002017.00
+Latitude: 38.99218605
+Longitude: -76.93748414
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.7040 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:19.113
+Frame ID: gps_link
+Time (UTC): 002018.00
+Latitude: 38.99218624
+Longitude: -76.93748402
+Fix Quality: 1
+Satellites: 17
+HDOP: 1.20
+Altitude: 22.6968 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:19.613
+Frame ID: gps_link
+Time (UTC): 002018.00
+Latitude: 38.99218624
+Longitude: -76.93748402
+Fix Quality: 1
+Satellites: 17
+HDOP: 1.20
+Altitude: 22.6968 m
+Geoid Separation: -33.0524 m
+[GPSData]:
+Header Timestamp: 2025-10-07 00:20:20.113
+Frame ID: gps_link
+Time (UTC): 002019.00
+Latitude: 38.99218649
+Longitude: -76.93748373
+Fix Quality: 1
+Satellites: 18
+HDOP: 1.10
+Altitude: 22.7085 m
+Geoid Separation: -33.0524 m

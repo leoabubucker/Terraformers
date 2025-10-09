@@ -1,5 +1,6 @@
-#ifndef __WIT_C_SDK_H
-#define __WIT_C_SDK_H
+#ifndef SRC_IMU_PUBSUB_INCLUDE_IMU_PUBSUB_WIT_C_SDK_H_
+
+#define SRC_IMU_PUBSUB_INCLUDE_IMU_PUBSUB_WIT_C_SDK_H_
 
 #ifdef __cplusplus
 extern "C" {
@@ -138,4 +139,5 @@ extern int16_t sReg[REGSIZE];
 }
 #endif
 
-#endif /* __WIT_C_SDK_H */
+#endif // SRC_IMU_PUBSUB_INCLUDE_IMU_PUBSUB_WIT_C_SDK_H_
+
