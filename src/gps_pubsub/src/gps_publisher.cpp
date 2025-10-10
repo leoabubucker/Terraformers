@@ -7,7 +7,7 @@ public:
   GPSPublisher()
       : Node("gps_publisher"), count_(0)
   {
-    gpsPublisher_ = this->create_publisher<gps_msgs::msg::GPSData>("GPSData", 10);
+    gps_publisher_ = this->create_publisher<gps_msgs::msg::GPSData>("GPSData", 10);
     timer_ = this->create_wall_timer(500ms, std::bind(&GPSPublisher::timer_callback, this));
   }
 
@@ -25,7 +25,7 @@ private:
     // message.hdop = 0.8;
     // message.altitude = 26.6381;
     // message.geoid_separation = -33.0521;
-    message.utc_time = GPSHelper::utc_time;
+    message.utc_time = GPSHelper::utc_time_;
     message.latitude = GPSHelper::latitude;
     message.longitude = GPSHelper::longitude;
     message.fix_quality = GPSHelper::fix_quality;
@@ -34,7 +34,7 @@ private:
     message.altitude = GPSHelper::altitude;
     message.geoid_separation = GPSHelper::geoid_separation;
     RCLCPP_INFO(this->get_logger(), "Publishing to topic GPSData:\nHeader Timestamp: %s\nFrame ID: %s\nTime (UTC): %s\nLatitude: %.8f\nLongitude: %.8f\nFix Quality: %u\nSatellites: %u\nHDOP: %.2f\nAltitude: %.4f m\nGeoid Separation: %.4f m",
-                GPSHelper::format_timestamp(message.header.stamp).c_str(),
+                GPSHelper::formatTimestamp(message.header.stamp).c_str(),
                 message.header.frame_id.c_str(),
                 message.utc_time.c_str(),
                 message.latitude,
@@ -44,10 +44,10 @@ private:
                 message.hdop,
                 message.altitude,
                 message.geoid_separation);
-    gpsPublisher_->publish(message);
+    gps_publisher_->publish(message);
   }
   rclcpp::TimerBase::SharedPtr timer_;
-  rclcpp::Publisher<gps_msgs::msg::GPSData>::SharedPtr gpsPublisher_;
+  rclcpp::Publisher<gps_msgs::msg::GPSData>::SharedPtr gps_publisher_;
   size_t count_;
   std::string format_timestamp(const builtin_interfaces::msg::Time &stamp)
   {

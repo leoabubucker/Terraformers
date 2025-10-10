@@ -5,8 +5,8 @@ volatile char IMUHelper::s_cDataUpdate = 0;
 const int IMUHelper::c_uiBaud[] = {2400, 4800, 9600, 19200, 38400, 57600, 115200, 230400, 460800, 921600};
 
 float IMUHelper::acc_x, IMUHelper::acc_y, IMUHelper::acc_z, IMUHelper::angle_x, IMUHelper::angle_y, IMUHelper::angle_z, IMUHelper::gyro_x, IMUHelper::gyro_y, IMUHelper::gyro_z, IMUHelper::h_x, IMUHelper::h_y, IMUHelper::h_z = -1.0;
-
-void IMUHelper::initSensor()
+unsigned char* IMUHelper::sensorPath = (unsigned char*)"/dev/ttyUSB0";
+int IMUHelper::initSensor()
 {
 
     /*
@@ -20,38 +20,57 @@ void IMUHelper::initSensor()
      *   c) Uncomment the rest of this function
      */
     // IMUHelper::add_to_memory();
-    unsigned char *sensorPath = (unsigned char*)"/dev/ttyUSB0"; //TODO: ADD SENSOR PATH
+    // unsigned char *sensorPath = (unsigned char*)"/dev/ttyUSB0"; //TODO: ADD SENSOR PATH
 
-    if((IMUHelper::fd = serial_open(sensorPath , 9600)<0))
+    if((IMUHelper::fd = serial_open(IMUHelper::sensorPath , 9600)<0))
     {
-        printf("open %s fail\n", sensorPath);
-        return;
+        printf("open %s fail\n", IMUHelper::sensorPath);
+        return -1;
     }
-    else printf("open %s success\n", sensorPath);
+    else printf("open %s success\n", IMUHelper::sensorPath);
 
-    float fAcc[3], fGyro[3], fAngle[3];
-    int i , ret;
-    unsigned char cBuff[1];
+    // float fAcc[3], fGyro[3], fAngle[3];
+    // int i , ret;
+    // unsigned char cBuff[1];
 
     WitInit(WIT_PROTOCOL_NORMAL, 0x50);
     WitRegisterCallBack(SensorDataUpdata);
-
-    // printf("\r\n********************** wit-motion Normal example  ************************\r\n");
     IMUHelper::AutoScanSensor(sensorPath);
+    return fd;
+    // printf("\r\n********************** wit-motion Normal example  ************************\r\n");
+    // IMUHelper::AutoScanSensor(sensorPath);
 
+    //     while(serial_read_data(IMUHelper::fd, cBuff, 1)){
+    //         WitSerialDataIn(cBuff[0]);
+    //     }
+
+    //     // printf("\n");
+    //     IMUHelper::Delayms(500);
+
+    //     if(IMUHelper::s_cDataUpdate){
+    //         // When data needs to be updated
+    //         IMUHelper::add_to_memory();
+    //     }
+    // serial_close(fd);
+    // return;
+}
+
+void IMUHelper::loopIMU( int fd){
+    float fAcc[3], fGyro[3], fAngle[3];
+    int i , ret;
+    unsigned char cBuff[1];
+    
         while(serial_read_data(IMUHelper::fd, cBuff, 1)){
             WitSerialDataIn(cBuff[0]);
         }
 
         // printf("\n");
-        IMUHelper::Delayms(500);
+        // IMUHelper::Delayms(500);
 
         if(IMUHelper::s_cDataUpdate){
             // When data needs to be updated
             IMUHelper::add_to_memory();
         }
-    serial_close(fd);
-    return;
 }
 
 int IMUHelper::add_to_memory()
@@ -204,7 +223,7 @@ void IMUHelper::AutoScanSensor(unsigned char *dev)
     printf("please check your connection\r\n");
 }
 
-std::string IMUHelper::format_timestamp(const builtin_interfaces::msg::Time &stamp)
+std::string IMUHelper::formatTimestamp(const builtin_interfaces::msg::Time &stamp)
 {
     // Combine seconds and nanoseconds into std::chrono::time_point
     auto total_ns = std::chrono::seconds(stamp.sec) + std::chrono::nanoseconds(stamp.nanosec);

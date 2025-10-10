@@ -57,8 +57,9 @@ class IMUHelper{
         static float h_y;
         static float h_z;
 
-        static void initSensor();
-        static std::string format_timestamp(const builtin_interfaces::msg::Time &stamp);
+        static int initSensor();
+        static void loopIMU(int fd);
+        static std::string formatTimestamp(const builtin_interfaces::msg::Time &stamp);
     
     private:
         static int fd, s_iCurBaud;
@@ -70,6 +71,7 @@ class IMUHelper{
         static void SensorDataUpdata(uint32_t uiReg, uint32_t uiRegNum);
         static void Delayms(uint16_t ucMs);
         static int add_to_memory();
+        static unsigned char *sensorPath;
 
 };
 

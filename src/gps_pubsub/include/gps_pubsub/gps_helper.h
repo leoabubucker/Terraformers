@@ -27,7 +27,7 @@
 class GPSHelper
 {
 public:
-    static std::string utc_time;
+    static std::string utc_time_;
     static double latitude;
     static double longitude;
     static uint8_t fix_quality;
@@ -37,22 +37,22 @@ public:
     static float geoid_separation;
     static int initGPS();
     static void loopGPS(int fd);
-    static std::string format_timestamp(const builtin_interfaces::msg::Time &stamp);
+    static std::string formatTimestamp(const builtin_interfaces::msg::Time &stamp);
 
 
 
 private:
-    static int open_serial_port(const char *portname, int attempt);
-    static int write_to_port(int fd, const char *buffer, size_t size);
-    static int read_from_port(int fd, char *buffer, size_t size);
+    static int openSerialPort(const char *port_name, int attempt);
+    static int writeToPort(int fd, const char *buffer, size_t size);
+    static int readFromPort(int fd, char *buffer, size_t size);
     static bool configureSerialPort(int fd, int baud_rate, int attempt);
     static bool validateChecksum(std::string str);
     static double convertNMEACoordinate(const std::string &coord_str, char direction);
     static void saveOutputRaw();
     static std::stringstream ss2;
     static int calculateChecksum(std::string str);
-    static void handle_sigint(int);
-    static std::atomic<bool> stopFlag;
+    static void handleSignalInterrupts(int);
+    static std::atomic<bool> stop_flag;
 
 };
 

@@ -9,15 +9,15 @@ public:
   GPSSubscriber()
       : Node("gps_subscriber")
   {
-    GPSSubscription_ = this->create_subscription<gps_msgs::msg::GPSData>( // CHANGE
-        "GPSData", 10, std::bind(&GPSSubscriber::topic_callback, this, _1));
+    gps_subscription = this->create_subscription<gps_msgs::msg::GPSData>(
+        "GPSData", 10, std::bind(&GPSSubscriber::topicCallback, this, _1));
   }
 
 private:
-  void topic_callback(const gps_msgs::msg::GPSData::SharedPtr message)
+  void topicCallback(const gps_msgs::msg::GPSData::SharedPtr message)
   {
     RCLCPP_INFO(this->get_logger(), "Listening to topic [GPSData]:\nHeader Timestamp: %s\nFrame ID: %s\nTime (UTC): %s\nLatitude: %.8f\nLongitude: %.8f\nFix Quality: %u\nSatellites: %u\nHDOP: %.2f\nAltitude: %.4f m\nGeoid Separation: %.4f m",
-                GPSHelper::format_timestamp(message->header.stamp).c_str(),
+                GPSHelper::formatTimestamp(message->header.stamp).c_str(),
                 message->header.frame_id.c_str(),
                 message->utc_time.c_str(),
                 message->latitude,
@@ -28,7 +28,7 @@ private:
                 message->altitude,
                 message->geoid_separation);
     ss << "[GPSData]:\n"
-       << "Header Timestamp: " << GPSHelper::format_timestamp(message->header.stamp) << "\n"
+       << "Header Timestamp: " << GPSHelper::formatTimestamp(message->header.stamp) << "\n"
        << "Frame ID: " << message->header.frame_id << "\n"
        << "Time (UTC): " << message->utc_time << "\n"
        << "Latitude: " << std::fixed << std::setprecision(8) << message->latitude << "\n"
@@ -52,7 +52,7 @@ private:
     ss.str("");
     ss.clear();
   }
-  rclcpp::Subscription<gps_msgs::msg::GPSData>::SharedPtr GPSSubscription_;
+  rclcpp::Subscription<gps_msgs::msg::GPSData>::SharedPtr gps_subscription;
   std::stringstream ss;
 };
 

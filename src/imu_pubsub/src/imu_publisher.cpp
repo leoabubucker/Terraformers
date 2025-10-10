@@ -35,7 +35,7 @@ private:
     message.x = dataMatrix[currentKey][0];
     message.y = dataMatrix[currentKey][1];
     message.z = dataMatrix[currentKey][2];
-    RCLCPP_INFO(this->get_logger(), "Publishing to topic [%s]:\nHeader Timestamp: %s\nFrame ID: %s\nx: %f\ny: %f\nz: %f", topic.c_str(), IMUHelper::format_timestamp(message.header.stamp).c_str(),
+    RCLCPP_INFO(this->get_logger(), "Publishing to topic [%s]:\nHeader Timestamp: %s\nFrame ID: %s\nx: %f\ny: %f\nz: %f", topic.c_str(), IMUHelper::formatTimestamp(message.header.stamp).c_str(),
                 message.header.frame_id.c_str(), message.x, message.y, message.z);
     publishers.at(topic)->publish(message);
     currentKey = (currentKey + 1) % 4;
@@ -56,14 +56,16 @@ int main(int argc, char *argv[])
 {
   rclcpp::init(argc, argv);
   auto node = std::make_shared<IMUPublisher>();
-  std::thread sensor_thread([&node]()
+  int fd = IMUHelper::initSensor();
+  std::thread sensor_thread([&node, fd]()
                             {
     while (rclcpp::ok()) {
-      IMUHelper::initSensor();
+      IMUHelper::loopIMU(fd);
       std::this_thread::sleep_for(std::chrono::milliseconds(100));
     } });
   rclcpp::spin(node);
   sensor_thread.join();
+  serial_close(fd);
   rclcpp::shutdown();
   return 0;
 }

@@ -1,19 +1,19 @@
 #include "gps_pubsub/gps_helper.h"
 
-std::atomic<bool> GPSHelper::stopFlag{false};
+std::atomic<bool> GPSHelper::stop_flag{false};
 
-std::string GPSHelper::utc_time = "DEFAULT VALUE";
+std::string GPSHelper::utc_time_ = "DEFAULT VALUE";
 double GPSHelper::latitude, GPSHelper::longitude = -1.0;
 uint8_t GPSHelper::fix_quality, GPSHelper::num_satellites = -1;
 float GPSHelper::hdop, GPSHelper::altitude, GPSHelper::geoid_separation = -1.0;
 std::stringstream GPSHelper::ss2;
-int GPSHelper::open_serial_port(const char *portname, int attempt)
+int GPSHelper::openSerialPort(const char *port_name, int attempt)
 {
 
-    int fd = open(portname, O_RDWR | O_NOCTTY | O_SYNC); // gives read and write access
+    int fd = open(port_name, O_RDWR | O_NOCTTY | O_SYNC); // gives read and write access
     if (fd < 0)
     {
-        std::cerr << "Error opening " << portname << ": "
+        std::cerr << "Error opening " << port_name << ": "
                   << strerror(errno) << ". Retrying in 1 Second (Atttempt " << attempt << ")" << std::endl;
         return -1;
     }
@@ -24,12 +24,12 @@ int GPSHelper::open_serial_port(const char *portname, int attempt)
     return fd;
 }
 
-int GPSHelper::write_to_port(int fd, const char *buffer, size_t size)
+int GPSHelper::writeToPort(int fd, const char *buffer, size_t size)
 {
     return write(fd, buffer, size);
 }
 
-int GPSHelper::read_from_port(int fd, char *buffer, size_t size)
+int GPSHelper::readFromPort(int fd, char *buffer, size_t size)
 {
 
     return read(fd, buffer, size);
@@ -76,41 +76,41 @@ bool GPSHelper::configureSerialPort(int fd, int baud_rate, int attempt)
 int GPSHelper::initGPS()
 {
     // return -1; // TESTING ONLY - COMMENT TO GET REAL DATA
-    signal(SIGINT, GPSHelper::handle_sigint);
-    const char *portname = "/dev/ttyUSB0";
+    signal(SIGINT, GPSHelper::handleSignalInterrupts);
+    const char *port_name = "/dev/ttyUSB0";
     int fd = -1;
-    int openAttempt = 0;
+    int attempts_to_open = 0;
     do
     {
-        if (stopFlag)
+        if (stop_flag)
         {
             std::cerr << "Ctrl+C detected. Exiting...\n";
             break;
         }
-        openAttempt++;
-        fd = GPSHelper::open_serial_port(portname, openAttempt);
+        attempts_to_open++;
+        fd = GPSHelper::openSerialPort(port_name, attempts_to_open);
         sleep(1);
     } while (fd == -1);
 
-    bool configurePort = false;
-    int readAttempt = 0;
+    bool port_is_configured = false;
+    int attempts_to_read = 0;
     do
     {
-        if (stopFlag)
+        if (stop_flag)
         {
             std::cerr << "Ctrl+C detected. Exiting...\n";
             break;
         }
-        readAttempt++;
-        configurePort = GPSHelper::configureSerialPort(fd, B115200, readAttempt);
+        attempts_to_read++;
+        port_is_configured = GPSHelper::configureSerialPort(fd, B115200, attempts_to_read);
         sleep(1);
-    } while (!configurePort);
+    } while (!port_is_configured);
 
     char buffer[100];
     const char *msg = "CONFIG\r\n";
-    int check_port = write_to_port(fd, msg, strlen(msg));
+    int check_port = writeToPort(fd, msg, strlen(msg));
     const char *msg_2 = "CONFIG ANTENNA POWERON\r\n";
-    int check_port_2 = write_to_port(fd, msg_2, strlen(msg_2));
+    int check_port_2 = writeToPort(fd, msg_2, strlen(msg_2));
     return fd;
 }
 
@@ -128,11 +128,11 @@ void GPSHelper::loopGPS(int fd)
     // return;
     // TESTING ONLY ABOVE THIS LINE - COMMENT TO GET REAL DATA
     const char *msg_1 = "GPGGA\r\n";
-    int check_port_1 = GPSHelper::write_to_port(fd, msg_1, strlen(msg_1));
+    int check_port_1 = GPSHelper::writeToPort(fd, msg_1, strlen(msg_1));
     char buffer_new[1000];
-    int n = GPSHelper::read_from_port(fd, buffer_new, sizeof(buffer_new));
+    int n = GPSHelper::readFromPort(fd, buffer_new, sizeof(buffer_new));
     char buffer_new_1[1000];
-    int n_1 = GPSHelper::read_from_port(fd, buffer_new_1, sizeof(buffer_new_1));
+    int n_1 = GPSHelper::readFromPort(fd, buffer_new_1, sizeof(buffer_new_1));
 
     if (n < 0)
     {
@@ -154,52 +154,52 @@ void GPSHelper::loopGPS(int fd)
             saveOutputRaw();
             if (validateChecksum(str))
             {
-                size_t asteriskPos = str.find('*');
-                if (asteriskPos != std::string::npos)
+                size_t asterick_pos = str.find('*');
+                if (asterick_pos != std::string::npos)
                 {
-                    str = str.substr(0, asteriskPos);
+                    str = str.substr(0, asterick_pos);
                 }
 
-                std::vector<std::string> splitOutput;
+                std::vector<std::string> split_output;
                 std::stringstream ss(str);
                 std::string token;
 
-                std::string expectedChecksum = "";
-                char directionLatitude = 'N';
-                char directionLongitude = 'W';
+                std::string expected_checksum = "";
+                char direction_latitude = 'N';
+                char direction_longitude = 'W';
                 if (str.find("S") != std::string::npos)
                 {
-                    directionLatitude = 'S';
+                    direction_latitude = 'S';
                 }
 
                 if (str.find("E") != std::string::npos)
                 {
-                    directionLongitude = 'E';
+                    direction_longitude = 'E';
                 }
                 // Split on ','
                 while (std::getline(ss, token, ','))
                 {
-                    splitOutput.push_back(token);
+                    split_output.push_back(token);
                 }
 
                 // Filter out unwanted tokens
-                std::unordered_set<std::string> valsToRemove = {"N", "E", "S", "W", "M", "$GNGGA", ""};
-                splitOutput.erase(
-                    std::remove_if(splitOutput.begin(), splitOutput.end(),
-                                   [&valsToRemove](const std::string &val)
+                std::unordered_set<std::string> vals_to_remove = {"N", "E", "S", "W", "M", "$GNGGA", ""};
+                split_output.erase(
+                    std::remove_if(split_output.begin(), split_output.end(),
+                                   [&vals_to_remove](const std::string &val)
                                    {
-                                       return valsToRemove.count(val) > 0;
+                                       return vals_to_remove.count(val) > 0;
                                    }),
-                    splitOutput.end());
+                    split_output.end());
 
-                GPSHelper::utc_time = splitOutput[0];
-                GPSHelper::latitude = convertNMEACoordinate(splitOutput[1], directionLatitude);
-                GPSHelper::longitude = convertNMEACoordinate(splitOutput[2], directionLongitude);
-                GPSHelper::fix_quality = static_cast<uint8_t>(std::stoi(splitOutput[3]));
-                GPSHelper::num_satellites = static_cast<uint8_t>(std::stoi(splitOutput[4]));
-                GPSHelper::hdop = std::stof(splitOutput[5]);
-                GPSHelper::altitude = std::stof(splitOutput[6]);
-                GPSHelper::geoid_separation = std::stof(splitOutput[7]);
+                GPSHelper::utc_time_ = split_output[0];
+                GPSHelper::latitude = convertNMEACoordinate(split_output[1], direction_latitude);
+                GPSHelper::longitude = convertNMEACoordinate(split_output[2], direction_longitude);
+                GPSHelper::fix_quality = static_cast<uint8_t>(std::stoi(split_output[3]));
+                GPSHelper::num_satellites = static_cast<uint8_t>(std::stoi(split_output[4]));
+                GPSHelper::hdop = std::stof(split_output[5]);
+                GPSHelper::altitude = std::stof(split_output[6]);
+                GPSHelper::geoid_separation = std::stof(split_output[7]);
             }
         }
     }
@@ -208,21 +208,21 @@ void GPSHelper::loopGPS(int fd)
 
 bool GPSHelper::validateChecksum(std::string str)
 {
-    std::string originalStr = str;
-    std::string expectedChecksum = str.substr(str.find('*') + 1);
+    std::string original_str = str;
+    std::string expected_checksum = str.substr(str.find('*') + 1);
     if (str[0] == '$' && str.find('*') != std::string::npos)
     {
         str = str.substr(1);
         str = str.substr(0, str.find('*'));
         std::cout << str << std::endl
-                  << expectedChecksum << std::endl
+                  << expected_checksum << std::endl
                   << GPSHelper::calculateChecksum(str) << std::endl;
-        if (calculateChecksum(str) == std::atoi(expectedChecksum.c_str()))
+        if (calculateChecksum(str) == std::atoi(expected_checksum.c_str()))
         {
             return true;
         }
     }
-    std::cerr << "ERROR: INVALID CHECKSUM, Expected: " << expectedChecksum << " Actual: " << calculateChecksum(str) << " GPSHelper Output Ignored: " << originalStr << std::endl;
+    std::cerr << "ERROR: INVALID CHECKSUM, Expected: " << expected_checksum << " Actual: " << calculateChecksum(str) << " GPSHelper Output Ignored: " << original_str << std::endl;
     return false;
 }
 
@@ -253,7 +253,7 @@ double GPSHelper::convertNMEACoordinate(const std::string &coord_str, char direc
     return decimal_degrees;
 }
 
-std::string GPSHelper::format_timestamp(const builtin_interfaces::msg::Time &stamp)
+std::string GPSHelper::formatTimestamp(const builtin_interfaces::msg::Time &stamp)
 {
     // Combine seconds and nanoseconds into std::chrono::time_point
     auto total_ns = std::chrono::seconds(stamp.sec) + std::chrono::nanoseconds(stamp.nanosec);
@@ -300,7 +300,7 @@ int GPSHelper::calculateChecksum(std::string str)
     return std::atoi(ss.str().c_str());
 }
 
-void GPSHelper::handle_sigint(int)
+void GPSHelper::handleSignalInterrupts(int)
 {
-    stopFlag = true;
+    stop_flag = true;
 }

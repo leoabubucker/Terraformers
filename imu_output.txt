@@ -446,3 +446,346 @@ Time (UTC):
 X: -249.0000
 Y: 1295.0000
 Y: 1295.0000
+[IMUMagnet]:
+Header Timestamp: 2025-10-09 23:54:37.277
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUAcceleration]:
+Header Timestamp: 2025-10-09 23:54:37.777
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0029
+Y: -0.0049
+Y: -0.0049
+[IMUAngle]:
+Header Timestamp: 2025-10-09 23:54:38.277
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUGyro]:
+Header Timestamp: 2025-10-09 23:54:38.777
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUMagnet]:
+Header Timestamp: 2025-10-09 23:54:39.277
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUAcceleration]:
+Header Timestamp: 2025-10-09 23:54:39.777
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0029
+Y: -0.0049
+Y: -0.0049
+[IMUAngle]:
+Header Timestamp: 2025-10-09 23:54:40.277
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUGyro]:
+Header Timestamp: 2025-10-09 23:54:40.777
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUMagnet]:
+Header Timestamp: 2025-10-09 23:54:41.277
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUAcceleration]:
+Header Timestamp: 2025-10-09 23:54:41.777
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0029
+Y: -0.0049
+Y: -0.0049
+[IMUAngle]:
+Header Timestamp: 2025-10-09 23:54:42.277
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUGyro]:
+Header Timestamp: 2025-10-09 23:54:42.777
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUMagnet]:
+Header Timestamp: 2025-10-09 23:54:43.277
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUAcceleration]:
+Header Timestamp: 2025-10-09 23:54:43.777
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0029
+Y: -0.0049
+Y: -0.0049
+[IMUAngle]:
+Header Timestamp: 2025-10-09 23:54:44.277
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUGyro]:
+Header Timestamp: 2025-10-09 23:54:44.777
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUMagnet]:
+Header Timestamp: 2025-10-09 23:54:45.277
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUAcceleration]:
+Header Timestamp: 2025-10-09 23:54:45.777
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0029
+Y: -0.0049
+Y: -0.0049
+[IMUAngle]:
+Header Timestamp: 2025-10-09 23:54:46.277
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUGyro]:
+Header Timestamp: 2025-10-09 23:54:46.777
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUMagnet]:
+Header Timestamp: 2025-10-09 23:54:47.277
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUAcceleration]:
+Header Timestamp: 2025-10-09 23:54:47.777
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0029
+Y: -0.0049
+Y: -0.0049
+[IMUAngle]:
+Header Timestamp: 2025-10-09 23:54:48.277
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUGyro]:
+Header Timestamp: 2025-10-09 23:54:48.777
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUMagnet]:
+Header Timestamp: 2025-10-09 23:54:49.277
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUAcceleration]:
+Header Timestamp: 2025-10-09 23:54:49.777
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0029
+Y: -0.0049
+Y: -0.0049
+[IMUAngle]:
+Header Timestamp: 2025-10-09 23:54:50.277
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUGyro]:
+Header Timestamp: 2025-10-09 23:54:50.777
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUMagnet]:
+Header Timestamp: 2025-10-09 23:54:51.277
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUAcceleration]:
+Header Timestamp: 2025-10-09 23:54:51.777
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0029
+Y: -0.0049
+Y: -0.0049
+[IMUAngle]:
+Header Timestamp: 2025-10-09 23:54:52.277
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUGyro]:
+Header Timestamp: 2025-10-09 23:54:52.777
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUMagnet]:
+Header Timestamp: 2025-10-09 23:54:53.277
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUAcceleration]:
+Header Timestamp: 2025-10-09 23:54:53.777
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0029
+Y: -0.0049
+Y: -0.0049
+[IMUAngle]:
+Header Timestamp: 2025-10-09 23:54:54.277
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUGyro]:
+Header Timestamp: 2025-10-09 23:54:54.777
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUMagnet]:
+Header Timestamp: 2025-10-09 23:54:55.277
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUAcceleration]:
+Header Timestamp: 2025-10-09 23:54:55.777
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0029
+Y: -0.0049
+Y: -0.0049
+[IMUAngle]:
+Header Timestamp: 2025-10-09 23:54:56.277
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUGyro]:
+Header Timestamp: 2025-10-09 23:54:56.777
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUMagnet]:
+Header Timestamp: 2025-10-09 23:54:57.277
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUAcceleration]:
+Header Timestamp: 2025-10-09 23:54:57.777
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0029
+Y: -0.0049
+Y: -0.0049
+[IMUAngle]:
+Header Timestamp: 2025-10-09 23:54:58.277
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUGyro]:
+Header Timestamp: 2025-10-09 23:54:58.777
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUMagnet]:
+Header Timestamp: 2025-10-09 23:54:59.277
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUAcceleration]:
+Header Timestamp: 2025-10-09 23:54:59.777
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0029
+Y: -0.0049
+Y: -0.0049
+[IMUAngle]:
+Header Timestamp: 2025-10-09 23:55:00.277
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUGyro]:
+Header Timestamp: 2025-10-09 23:55:00.777
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
+[IMUMagnet]:
+Header Timestamp: 2025-10-09 23:55:01.277
+Frame ID: imu_link
+Time (UTC): 
+X: 0.0000
+Y: 0.0000
+Y: 0.0000
